@@ -1,0 +1,23 @@
+<div style="position: relative;">
+    <div class="actived-time">
+        {{showTime}}
+    </div>
+    <div class="actived-mm"></div>
+    <ion-scroll class="ruler-scroll" scrollX="true">
+
+        <div class='ruler' [ngStyle]="{'width': (bodyWidth / 2 + 2136) + 'px'}">
+            <div class='cm' *ngFor="let time of times">
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <div class='mm'></div>
+                <span class="num">{{time}}</span>
+            </div>
+        </div>
+    </ion-scroll>
+</div>

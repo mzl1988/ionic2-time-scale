@@ -1,0 +1,73 @@
+page-time-scale {
+    .ruler-scroll {
+        height: 100px;
+        margin-top: 100px;
+        background: #DBDBDB;
+    }
+    .actived-time {
+        position: absolute;
+        top: -21px;
+        left: 50%;
+        z-index: 1;
+        width: 50px;
+        padding: 3px 1px;
+        text-align: center;
+        margin-left: -25px;
+        background: #585858;
+        color: #ffffff;
+        font-size: 70%;
+        border-radius: 10px;
+    }
+    .actived-mm {
+        height: 100px;
+        width: 1px;
+        border-right: 1px solid red;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        z-index: 1;
+    }
+    .scroll-zoom-wrapper {
+        height: 100%;
+    }
+    .ruler {
+        box-sizing: border-box;
+        position: relative;
+        bottom: -38px;
+        width: 2136px;
+        height: 36px;
+        margin-left: 50%;
+    }
+    .ruler .cm {
+        box-sizing: border-box;
+        height: 36px;
+        width: 90px;
+        float: left;
+        position: relative;
+        border-right: 1px solid #555;
+        border-left: 1px solid #555;
+        border-bottom: 1px solid #555;
+        margin-right: -1px;
+    }
+    .ruler .cm .num {
+        position: absolute;
+        left: -10px;
+        bottom: -23px;
+        width: 20px;
+        text-align: center;
+    }
+    .ruler .mm {
+        box-sizing: border-box;
+        border-right: 1px solid #555;
+        height: 12px;
+        width: 10px;
+        float: left;
+        position: relative;
+        bottom: -24px;
+        margin-left: -1px;
+    }
+    .ruler .mm:nth-of-type(5) {
+        height: 24px;
+        bottom: -12px;
+    }
+}
